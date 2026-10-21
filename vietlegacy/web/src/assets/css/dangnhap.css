@@ -1,0 +1,356 @@
+html,
+body {
+    background-color: #ffffff;
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    border-radius: 3px;
+    height:100px;
+    position:relative;    
+}
+.brand{
+    display:flex;
+    align-items: center;
+}
+.brand a{
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+}
+.brand img{
+    width:120px;
+    margin-left:100px;
+    margin-top:10px;
+}    
+.brand h4{
+    margin-right:10px;
+    font-size: 30px;
+    color:brown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*menu*/
+.nav{
+    border-radius: 20px;
+    padding:15px;
+    width:60%;
+    height:15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    display:grid ;
+    display:inline;
+    margin-left: 30px;
+}
+
+.nav a{
+    
+    margin-right: 50px;
+    color:brown;
+    text-align: center;
+    text-decoration: none;
+    transition:0.3s;
+    
+}
+.nav :hover{
+    color:white;
+    transform:translateX(20px);
+    border-style:solid;
+    border-radius: 20px;
+    padding:5px;
+    background-color:brown;
+}
+/*đăng nhập*/
+.header-login {
+   display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-right: 30px;
+}
+.header-login a{
+     text-decoration: none;
+     transition:0.3s;
+     margin-left: 20px;
+}
+.search {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    padding: 0 10px 0 12px;
+    margin: 0;
+}
+
+.search input {
+    width: 90px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    font-size: 14px;
+}
+
+.search i {
+    font-size: 17px;
+    color: #555;
+    flex-shrink: 0;
+}
+.search:hover{
+    color:white;
+    border-style:solid;
+    border-radius: 20px;
+    padding:10px;
+    background-color:white;
+}
+.cart{
+    color:dimgray;
+}
+.cart:hover{
+    color:white;
+    transform:translateX(20px);
+    border-style:solid;
+    border-radius: 20px;
+    padding:10px;
+    background-color:brown;
+}
+/*đăng nhập*/
+.login{
+    color:dimgray;
+}
+.login:hover{
+    color:white;
+    transform:translateX(20px);
+    border-style:solid;
+    border-radius: 20px;
+    padding:10px;
+    background-color:brown;
+    background-size: cover;
+}
+.login-form{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 50px auto;
+}
+.login-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+    color:brown;
+}
+.login-form form{
+    display: flex;
+    flex-direction: column;
+}
+.login-form input[type="text"],
+.login-form input[type="password"]{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.login-form button{
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login-form p{
+    text-align: center;
+    margin-top: 10px;
+    color:brown;
+}
+
+.social-login{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.social-login a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #555;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.social-login a:hover{
+    background-color: brown;
+    color: white;
+}
+.footer{
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+   
+}
+.footer-content p{
+    margin: 0;
+}
+.footer-section h3{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.footer-section a{
+    text-decoration: none;
+    color: #666;
+    transition: 0.3s;
+}
+.footer-section a:hover{
+    color:brown;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 160px;
+}
+li{
+    margin-bottom: 5px;
+}
+.footer-section{
+    flex: 1;
+    margin-right: 20px;
+}
+.footer-section:last-child{
+    margin-right: 0;
+}
+.footer-section.contact{
+    margin-bottom:60px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap:15px;
+    font-size: 15px;
+    padding-top:10px;
+}
+.connect{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap:20px;
+    font-size: 15px;
+    padding-top:10px;
+}
+
+@media (max-width: 768px){
+    .header{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px 12px;
+        gap: 8px;
+    }
+    .brand img{
+        width: 60px;
+        margin: 0;
+    }
+    .brand h4{
+        font-size: 22px;
+    }
+    .nav{
+        order: 3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 8px 0;
+        font-size: 15px;
+    }
+    .nav a{
+        margin: 5px 10px;
+    }
+    .header-login{
+        gap: 8px;
+        margin: 0;
+    }
+    .header-login a{
+        margin-left: 6px;
+    }
+    .search{
+        width: 125px;
+    }
+    .login-form{
+        box-sizing: border-box;
+        width: calc(100% - 32px);
+        max-width: 440px;
+        height: auto;
+        min-height: 0;
+        margin: 32px auto;
+        padding: 20px;
+    }
+    .footer{
+        margin-top: 48px;
+        padding: 20px 16px;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+    .footer-section{
+        margin-right: 0;
+    }
+    .footer-section.contact{
+        margin-bottom: 0;
+    }
+    ul{
+        margin-left: 0;
+        text-align: center;
+    }
+    .connect{
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 380px){
+    .brand h4{
+        font-size: 19px;
+    }
+    .search{
+        width: 112px;
+    }
+    .nav a{
+        margin: 5px 7px;
+    }
+}
