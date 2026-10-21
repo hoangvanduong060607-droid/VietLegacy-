@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng | VietLegacy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/css/trangchu.css">
+    <link rel="stylesheet" href="../assets/css/giohang.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <header class="header">
+        <div class="brand">
+            <a href="../html/trangchu.html" aria-label="VietLegacy - Trang chủ">
+                <img src="../assets/images/logo.png" alt="VietLegacy">
+                <h4>VietLegacy</h4>
+            </a>
+        </div>
+        <nav class="nav" aria-label="Điều hướng chính">
+            <a href="../html/trangchu.html">Trang Chủ</a>
+            <a href="#">Nam</a>
+            <a href="#">Nữ</a>
+            <a href="#">Phụ Kiện</a>
+            <a href="../html/thongtin.html">Thông Tin</a>
+        </nav>
+        <div class="header-login">
+            <div class="search">
+                <input type="search" placeholder="Tìm Kiếm" aria-label="Tìm kiếm">
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </div>
+            <a href="../html/dangnhap.html" class="login" aria-label="Đăng nhập">
+                <i class="fa-regular fa-circle-user" aria-hidden="true"></i>
+            </a>
+            <a href="../html/giohang.html" class="cart" aria-label="Giỏ hàng" aria-current="page">
+                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+            </a>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <h1>Giỏ Hàng</h1>
+        <div class="cart-layout">
+            <section class="cart-empty" aria-labelledby="empty-cart-title">
+                <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                <h2 id="empty-cart-title">Giỏ hàng của bạn đang trống</h2>
+                <p>Hãy khám phá các sản phẩm của VietLegacy và chọn món đồ bạn yêu thích nhé.</p>
+                <a class="continue-shopping" href="../html/trangchu.html">Tiếp tục mua sắm</a>
+            </section>
+
+            <aside class="cart-summary" aria-labelledby="summary-title">
+                <h2 id="summary-title">Tóm Tắt Đơn Hàng</h2>
+                <div class="summary-row">
+                    <span>Tạm tính</span>
+                    <span>0 ₫</span>
+                </div>
+                <div class="summary-row">
+                    <span>Phí vận chuyển</span>
+                    <span>Tính khi thanh toán</span>
+                </div>
+                <div class="summary-row summary-total">
+                    <strong>Tổng cộng</strong>
+                    <strong>0 ₫</strong>
+                </div>
+                <button class="checkout-button" type="button" disabled>Tiến Hành Thanh Toán</button>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-section about">
+            <h3>VietLegacy</h3>
+            <p>VietLegacy là thương hiệu thời trang nổi tiếng với các sản phẩm chất lượng cao và thiết kế tối giản.</p>
+        </div>
+        <div class="footer-content">
+            <div class="footer-section links">
+                <h3>Hỗ Trợ Khách Hàng</h3>
+                <ul>
+                    <li><a href="#">Chính Sách Đổi Trả</a></li>
+                    <li><a href="#">Chính Sách Bảo Mật</a></li>
+                    <li><a href="#">Chính Sách Bảo Hành</a></li>
+                    <li><a href="#">Hướng Dẫn Mua Hàng</a></li>
+                </ul>
+            </div>
+            <div class="footer-section information">
+                <h3>Thông Tin VietLegacy</h3>
+                <ul>
+                    <li><a href="#">Về Chúng Tôi</a></li>
+                    <li><a href="#">Hệ Thống Cửa Hàng</a></li>
+                    <li><a href="#">Điều Khoản Dịch Vụ</a></li>
+                    <li><a href="#">Tuyển Dụng</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Kết Nối Với Chúng Tôi</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="connect">
+                    <a href="mailto:VietLegacy@gmail.com">Email: VietLegacy@gmail.com</a>
+                    <a href="tel:+84123456789">Phone: +84 123 456 789</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,602 @@
+html,
+body {
+    background-color: #ffffff;
+}
+
+.header{
+    display:flex;
+    align-items: center;
+    border-radius: 3px;
+    height:100px;
+    position:relative;    
+}
+.brand{
+    display:flex;
+    align-items: center;
+}
+.brand a{
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+}
+.brand img{
+    width:120px;
+    margin-left:100px;
+    margin-top:10px;
+}    
+.brand h4{
+    margin-right:10px;
+    font-size: 30px;
+    color:brown;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*menu*/
+.nav{
+    border-radius: 20px;
+    padding:15px;
+    width:60%;
+    height:15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+    display:grid ;
+    display:inline;
+    margin-left: 30px;
+}
+
+.nav a{
+    
+    margin-right: 50px;
+    color:brown;
+    text-align: center;
+    text-decoration: none;
+    transition:0.3s;
+    
+}
+.nav a:hover {
+    color: white;
+    transform: translateX(20px);
+    border-style: solid;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: brown;
+}
+.nav :hover{
+    color:white;
+    transform:translateX(20px);
+    border-style:solid;
+    border-radius: 20px;
+    padding:5px;
+    background-color:brown;
+}
+/*đăng nhập*/
+.header-login {
+   display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 0;
+    padding-top: 0;
+    margin-right: 30px;
+}
+.header-login a{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 40px;
+     height: 40px;
+     box-sizing: border-box;
+     text-decoration: none;
+     transition: color 0.2s ease, background-color 0.2s ease;
+     margin-left: 20px;
+}
+.search {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 22px;
+    padding: 0 10px 0 12px;
+    margin: 0;
+}
+
+.search input {
+    width: 90px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    font-size: 14px;
+}
+
+.search i {
+    font-size: 17px;
+    color: #555;
+    flex-shrink: 0;
+}
+.search:hover{
+    color:white;
+    border-style:solid;
+    border-radius: 20px;
+    padding:10px;
+    background-color:white;
+}
+.login,
+.cart{
+    color:dimgray;
+}
+.cart:hover,
+.login:hover{
+    color:white;
+    border-radius: 50%;
+    background-color:brown;
+}
+.banner{
+    position:relative;
+    width:100%;
+    height:600px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+.banner-img{
+    width:1500px;
+    height:600px;
+    border-radius:10px;
+  
+    margin-top: 50px;
+}
+
+.banner-text{
+    position:absolute;
+    left:15%;
+    bottom:20%;
+    transform:translateY(-50px);
+    color:burlywood;
+}
+.banner p1{
+    position:absolute;
+    left:655px;
+    bottom:30px;
+    color:white;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.banner-button{
+    color:white;
+    width:130px;
+    height:30px;
+    padding-left:20px;
+    padding-top:10px;
+    border-radius:50px;
+    border-style:solid;
+    border-color:white;
+    transition:0.3s;
+    position:absolute;
+    text-decoration:none;
+    top:150px;
+    left:450px;
+}
+.banner-button:hover{
+    color:White;
+    background-color:brown;
+    transform:scale(20px);
+    border-style:solid;
+    border-radius: 20px;
+}
+.main{
+    margin-top:40px;
+    margin-left:500px;
+    font-size:20px;
+}
+.main a{
+    text-decoration: none;
+    color:brown;
+    margin-right: 50px;
+    border-radius:20px;
+    border-style:solid;
+    border-color:white;
+    background-color:white;
+    padding:3px;
+    transition:0.3s;
+}
+body.home-page .main a:hover{
+    color:white;
+    transform:translateX(20px);
+    border-style:solid;
+    border-radius: 20px;
+    padding:5px;
+    background-color:brown;    
+}
+.best-seller{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.best-seller strong{
+    text-decoration:underline;
+    color:black;
+    margin-left: 650px;
+}
+.product-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.product-grid a{
+    gap:2px;
+    text-decoration: none;
+    color:black;
+    font-size:large;
+}
+.product-item{
+    gap: 2px;
+    transition: transform 0.3s ease;
+}
+.product-item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    font-size:large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.product-item img{
+    gap: 2px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+.product-item:hover{
+    transform: scale(1.05);
+}
+.banner2{
+    position:relative;
+    width:100%;
+    height:600px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+.banner-text2{
+    position:absolute;
+    left:15%;
+    bottom:20%;
+    transform:translateY(-50px);
+    color:burlywood;
+}
+.banner-button2{
+    color:white;
+    width:120px;
+    height:30px;
+    margin-left: 25px;
+    padding-left:20px;
+    padding-top:10px;
+    border-radius:50px;
+    border-style:solid;
+    border-color:white;
+    transition:0.3s;
+    position:absolute;
+    text-decoration:none;
+    top:150px;
+    left:450px;
+}
+.banner2 p2{
+    position:absolute;
+    left:675px;
+    bottom:30px;
+    color:white;
+    font-size: 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.banner-button2:hover{
+    color:White;
+    background-color:brown;
+    transform:scale(20px);
+    border-style:solid;
+    border-radius: 20px;
+}
+.new-arrivals{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.new-arrivals strong{
+    text-decoration:underline;
+    color:black;
+    margin-left: 650px;
+}
+.explore{
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+.explore strong{
+    text-decoration:underline;
+    color:black;
+    margin-left: 650px;
+}
+.explore-grid{
+    display:grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 30px;
+    margin-top: 30px;
+    margin-left: 230px;
+}
+.footer{
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+   
+}
+.footer-content p{
+    margin: 0;
+}
+.footer-section h3{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+.footer-section a{
+    text-decoration: none;
+    color: #666;
+    transition: 0.3s;
+}
+.footer-section a:hover{
+    color:brown;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-left: 160px;
+}
+li{
+    margin-bottom: 5px;
+}
+.footer-section{
+    flex: 1;
+    margin-right: 20px;
+}
+.footer-section:last-child{
+    margin-right: 0;
+}
+.footer-section.contact{
+    margin-bottom:60px;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap:15px;
+    font-size: 15px;
+    padding-top:10px;
+}
+.connect{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap:20px;
+    font-size: 15px;
+    padding-top:10px;
+}
+
+/* Responsive layout for phones */
+@media (max-width: 767px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .header {
+        height: auto;
+        min-height: 76px;
+        padding: 8px 12px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .brand img {
+        width: 58px;
+        margin: 0 6px 0 0;
+    }
+
+    .brand h4 {
+        margin: 0;
+        font-size: 21px;
+    }
+
+    .nav {
+        order: 3;
+        width: 100%;
+        height: auto;
+        padding: 8px 0 4px;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+        font-size: 13px;
+    }
+
+    .nav a {
+        margin: 0;
+        padding: 5px 3px;
+        white-space: nowrap;
+    }
+
+    .nav a:hover {
+        padding: 5px 3px;
+        transform: none;
+    }
+
+    .header-login {
+        gap: 8px;
+        margin: 0;
+    }
+
+    .header-login a {
+        margin-left: 4px;
+    }
+
+    .search {
+        width: 126px;
+        height: 34px;
+    }
+
+    .search input {
+        width: 84px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .search i {
+        font-size: 14px;
+    }
+
+    .banner,
+    .banner2 {
+        width: 100%;
+        height: auto;
+        min-height: 220px;
+        margin: 18px 0 0;
+    }
+
+    .banner-img {
+        display: block;
+        width: 100%;
+        height: 220px;
+        margin: 0;
+        object-fit: cover;
+    }
+
+    .banner p1,
+    .banner2 p2 {
+        left: 50%;
+        bottom: 30px;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .banner-text,
+    .banner-text2 {
+        left: 50%;
+        bottom: 58px;
+        transform: translateX(-50%);
+        width: max-content;
+    }
+
+    .banner-button,
+    .banner-button2 {
+        position: static;
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 8px 16px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .best-seller,
+    .new-arrivals,
+    .explore {
+        margin: 42px 12px 0;
+        font-size: 20px;
+    }
+
+    .best-seller strong,
+    .new-arrivals strong,
+    .explore strong {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    .product-grid,
+    .explore-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 14px;
+        margin: 20px 0 0;
+    }
+
+    .product-item img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    .product-item a {
+        gap: 4px;
+        font-size: 14px;
+    }
+
+    .explore-grid .product-item:last-child {
+        grid-column: 1 / -1;
+        width: 50%;
+        justify-self: center;
+    }
+
+    .footer {
+        margin-top: 55px;
+        padding: 24px 16px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .footer-section,
+    .footer-section:last-child,
+    .footer-section.contact {
+        margin: 0;
+    }
+
+    .footer-section h3 {
+        margin-bottom: 8px;
+    }
+
+    ul {
+        margin: 0;
+        text-align: center;
+    }
+
+    .social-icons,
+    .connect {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}

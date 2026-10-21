@@ -1,0 +1,127 @@
+.cart-page {
+    max-width: 1180px;
+    min-height: 430px;
+    margin: 55px auto 80px;
+    padding: 0 24px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cart-page > h1 {
+    margin: 0 0 32px;
+    color: #333;
+    font-size: 32px;
+    text-align: center;
+}
+
+.cart-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 32px;
+    align-items: start;
+}
+
+.cart-empty,
+.cart-summary {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    background: #fff;
+    padding: 28px;
+}
+
+.cart-empty {
+    min-height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.cart-empty > i {
+    color: brown;
+    font-size: 42px;
+}
+
+.cart-empty h2 {
+    margin: 18px 0 8px;
+    font-size: 22px;
+}
+
+.cart-empty p {
+    margin: 0 0 22px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.continue-shopping {
+    display: inline-block;
+    border: 1px solid brown;
+    border-radius: 4px;
+    padding: 11px 20px;
+    background: brown;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.continue-shopping:hover {
+    background: #702020;
+}
+
+.cart-summary h2 {
+    margin: 0 0 22px;
+    font-size: 20px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+    color: #555;
+    font-size: 14px;
+}
+
+.summary-total {
+    border-top: 1px solid #e5e5e5;
+    margin: 20px 0;
+    padding-top: 18px;
+    color: #333;
+    font-size: 16px;
+}
+
+.checkout-button {
+    width: 100%;
+    border: 0;
+    border-radius: 4px;
+    padding: 13px 16px;
+    background: #ccc;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+    .cart-page {
+        min-height: 0;
+        margin: 32px auto 48px;
+        padding: 0 16px;
+    }
+
+    .cart-page > h1 {
+        margin-bottom: 22px;
+        font-size: 27px;
+    }
+
+    .cart-layout {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .cart-empty,
+    .cart-summary {
+        padding: 22px;
+    }
+}
